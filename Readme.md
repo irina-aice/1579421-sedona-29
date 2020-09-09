@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Володина](https://up.htmlacademy.ru/htmlcss/29/user/1579421).
-* Наставник: `Неизвестно`.
+* Наставник: `[Андрей Островский](https://htmlacademy.ru/profile/grandmaus)`.
 
 ---
 
