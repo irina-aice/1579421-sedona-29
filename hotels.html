@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a>
-        <img src="index.html" alt="Логотип города Седона">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="" alt="Логотип города Седона">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li>
           <a href="blank.html">Информация</a>
         </li>
@@ -21,96 +24,96 @@
           <a href="blank.html">Карта штата</a>
         </li>
         <li>
-          <a href="hotels.html">Гостиницы</a>
+          <a href="hotels.html" class="current">Гостиницы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Гостиницы</h1>
+  <main class="container">
+    <h1 class="hidden">Гостиницы</h1>
 
-    <section>
+    <section class="search">
       <h2>Фильтр гостиниц</h2>
     </section>
 
-    <section>
+    <section class="results">
       <h2>Ресультаты поиска</h2>
-      <p>Найдено:3</p>
+      <p class="results-found">Найдено:3</p>
       <p>Сортировка:</p>
-      <ul>
-        <li>
+      <ul class="results-list">
+        <li class="results-item">
           <a href="#">по цене</a>
         </li>
-        <li>
+        <li class="results-item">
           <a href="#">по типу</a>
         </li>
-        <li>
+        <li class="results-item">
           <a href="#">по рейтингу</a>
         </li>
       </ul>
       <a href="#">Сортировка по возрастанию</a>
       <a href="#">Сортировка по убыванию</a>
-      <ul>
-        <li>
+      <ul class="hotels-list">
+        <li class="hotels-item">
           <a href="blank.html">
             <img src="#" alt="Amara Resort & Spa">
           </a>
           <h3>
-            <a href="blank.html">Amara Resort & Spa</a>
+            <a href="blank.html" class="hotels-item-title">Amara Resort & Spa</a>
           </h3>
           <p>Гостиница</p>
           <p>от 4000 р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг: 8,5</p>
+          <a href="#" class="hotels-item-details">Подробнее</a>
+          <a href="#" class="hotels-item-booking">Забронировать</a>
+          <p class="hotels-item-rating">Рейтинг: 8,5</p>
         </li>
-        <li>
+        <li class="hotels-item">
           <a href="blank.html">
             <img src="#" alt="Desert Quail Inn">
           </a>
           <h3>
-            <a href="blank.html">Desert Quail Inn</a>
+            <a href="blank.html" class="hotels-item-title">Desert Quail Inn</a>
           </h3>
           <p>Мотель</p>
           <p>от 3000 р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг: 8,9</p>
+          <a href="#" class="hotels-item-details">Подробнее</a>
+          <a href="#" class="hotels-item-booking">Забронировать</a>
+          <p class="hotels-item-rating">Рейтинг: 8,9</p>
         </li>
-        <li>
+        <li class="hotels-item">
           <a href="blank.html">
             <img src="#" alt="Villas At Poco Diablo">
           </a>
           <h3>
-            <a href="blank.html">Villas At Poco Diablo</a>
+            <a href="blank.html" class="hotels-item-title">Villas At Poco Diablo</a>
           </h3>
           <p>Апартаменты</p>
           <p>от 2000 р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг: 9,2</p>
+          <a href="#" class="hotels-item-details">Подробнее</a>
+          <a href="#" class="hotels-item-booking">Забронировать</a>
+          <p class="hotels-item-rating">Рейтинг: 9,2</p>
         </li>
       </ul>
     </section>
 
   </main>
-  <footer>
+  <footer class="page-footer main-footer">
     <p>#Visitsedona</p>
     <p>Тел:
-      <a href="tel:+74956660166">+74956660166</a>
+      <a class="footer-phone" href="tel:+74956660166">+74956660166</a>
     </p>
-    <ul>
-      <li>
+    <ul class="social-list">
+      <li class="social-button">
         <a href="#">Twitter</a>
       </li>
-      <li>
+      <li class="social-button">
         <a href="#">Facebook</a>
       </li>
-      <li>
+      <li class="social-button">
         <a href="#">YouTube</a>
       </li>
     </ul>
-    <p>
+    <p class="footer-copyright">
       Website by <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
     </p>
   </footer>
