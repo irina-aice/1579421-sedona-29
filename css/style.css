@@ -63,8 +63,6 @@ img {
 }
 
 .features p {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 26px;
   color: var(--dark-grey);
 }
@@ -81,14 +79,10 @@ img {
 .main-feature-item h2 {
   font-weight: 700;
   font-size: 21px;
-  line-height: 21px;
   color: var(--light);
 }
 
-.main-feature-item p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+.main-feature-item > p {
   color: var(--light);
 }
 
@@ -100,14 +94,10 @@ img {
 .service-item h3 {
   font-weight: 700;
   font-size: 21px;
-  line-height: 21px;
   color: var(--dark);
 }
 
-.desc p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+.description {
   color: var(--dark-grey);
 }
 
@@ -119,8 +109,6 @@ img {
 .feature-item h2 {
   font-weight: 700;
   font-size: 21px;
-  line-height: 21px;
-  text-transform: uppercase;
   color: var(--dark);
 }
 
@@ -140,9 +128,6 @@ img {
 }
 
 .search-info {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
   color: var(--dark-grey);
 }
 
@@ -181,8 +166,6 @@ img {
 }
 
 .footer-copyright {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 26px;
   color: var(--dark);
 }
