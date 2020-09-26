@@ -28,6 +28,18 @@ body {
   text-transform: uppercase;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+  align-content: start;
+}
+
 .main-navigation a,
 .footer-phone,
 .social-button a {
@@ -40,13 +52,39 @@ img {
 }
 
 .main-navigation {
+  display: grid;
+  width: 1200px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0 auto;
+  padding: 0;
   color: var(--dark);
 }
 
+.main-header-logo {
+  justify-self: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0;
+  justify-self: center;
+}
+
 .site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation-left {
+  text-align: left;
+}
+
+.site-navigation-right {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -66,6 +104,7 @@ img {
 }
 
 .features {
+  display: grid;
   text-align: center;
 }
 
@@ -82,11 +121,31 @@ img {
 }
 
 .features-list {
+  width: 1200px;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 256px auto;
+  margin: 0;
+  padding: 51px 0 0 0;
+}
+
+.feature-item-city {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: 1 / -1;
+}
+
+.feature-item-bridge {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
 }
 
 .main-feature-item {
   text-align: center;
+  margin: 0 auto;
   background-color: var(--light-blue);
 }
 
@@ -96,13 +155,22 @@ img {
   color: var(--light);
 }
 
-.main-feature-item > p {
+.main-feature-item-description p {
   color: var(--light);
 }
 
 .service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1 / -1;
   list-style: none;
+  margin: 0;
+  padding: 0;
   background-color: var(--light);
+}
+
+.service-item {
+  display: grid;
 }
 
 .service-item h3 {
@@ -113,6 +181,7 @@ img {
 
 .description {
   color: var(--dark-gray);
+  margin: 0 10px 82px 10px;
 }
 
 .feature-item {
@@ -165,6 +234,10 @@ img {
 }
 
 .main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
+  justify-self: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
