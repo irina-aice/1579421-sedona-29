@@ -7,23 +7,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" alt="Логотип города Седона">
       </a>
       <ul class="site-navigation">
-        <li>
+        <li class="site-navigation-left">
           <a href="blank.html">Информация</a>
         </li>
-        <li>
+        <li class="site-navigation-left">
           <a href="blank.html">Фото и видео</a>
         </li>
-        <li>
+        <li class="site-navigation-right">
           <a href="blank.html">Карта штата</a>
         </li>
-        <li>
+        <li class="site-navigation-right">
           <a href="hotels.html" class="current">Гостиницы</a>
         </li>
       </ul>
@@ -32,12 +32,13 @@
   <main class="container">
     <h1 class="hidden">Гостиницы</h1>
 
-    <section class="search">
+    <section class="search-hotels">
       <h2>Фильтр гостиниц</h2>
     </section>
 
     <section class="results">
       <h2>Ресультаты поиска</h2>
+      <div class="results-block">
       <p class="results-found">Найдено:3</p>
       <p>Сортировка:</p>
       <ul class="results-list">
@@ -53,55 +54,70 @@
       </ul>
       <a href="#">Сортировка по возрастанию</a>
       <a href="#">Сортировка по убыванию</a>
+      </div>
       <ul class="hotels-list">
         <li class="hotels-item">
           <a href="blank.html">
             <img src="img/amara-ressort.jpg" width="135" height="90" alt="Amara Resort & Spa">
           </a>
-          <h3>
-            <a href="blank.html" class="hotels-item-title">Amara Resort & Spa</a>
-          </h3>
-          <p>Гостиница</p>
-          <p>от 4000 р.</p>
-          <a href="#" class="hotels-item-details">Подробнее</a>
-          <a href="#" class="hotels-item-booking">Забронировать</a>
+          <div>
+            <h3>
+              <a href="blank.html" class="hotels-item-title">Amara Resort & Spa</a>
+            </h3>
+            <p>Гостиница</p>
+            <p>от 4000 р.</p>
+            <a href="#" class="hotels-item-details">Подробнее</a>
+            <a href="#" class="hotels-item-booking">Забронировать</a>
+          </div>
+          <div>
           <p class="hotels-item-rating">Рейтинг: 8,5</p>
+          </div>
         </li>
         <li class="hotels-item">
           <a href="blank.html">
             <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
           </a>
-          <h3>
-            <a href="blank.html" class="hotels-item-title">Desert Quail Inn</a>
-          </h3>
-          <p>Мотель</p>
-          <p>от 3000 р.</p>
-          <a href="#" class="hotels-item-details">Подробнее</a>
-          <a href="#" class="hotels-item-booking">Забронировать</a>
+          <div>
+            <h3>
+              <a href="blank.html" class="hotels-item-title">Desert Quail Inn</a>
+            </h3>
+            <p>Мотель</p>
+            <p>от 3000 р.</p>
+            <a href="#" class="hotels-item-details">Подробнее</a>
+            <a href="#" class="hotels-item-booking">Забронировать</a>
+          </div>
+          <div>
           <p class="hotels-item-rating">Рейтинг: 8,9</p>
+          </div>
         </li>
         <li class="hotels-item">
           <a href="blank.html">
             <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
           </a>
-          <h3>
-            <a href="blank.html" class="hotels-item-title">Villas At Poco Diablo</a>
-          </h3>
-          <p>Апартаменты</p>
-          <p>от 2000 р.</p>
-          <a href="#" class="hotels-item-details">Подробнее</a>
-          <a href="#" class="hotels-item-booking">Забронировать</a>
+          <div>
+            <h3>
+              <a href="blank.html" class="hotels-item-title">Villas At Poco Diablo</a>
+            </h3>
+            <p>Апартаменты</p>
+            <p>от 2000 р.</p>
+            <a href="#" class="hotels-item-details">Подробнее</a>
+            <a href="#" class="hotels-item-booking">Забронировать</a>
+          </div>
+          <div>
           <p class="hotels-item-rating">Рейтинг: 9,2</p>
+          </div>
         </li>
       </ul>
     </section>
 
   </main>
-  <footer class="page-footer main-footer">
-    <p>#Visitsedona</p>
-    <p>Тел:
-      <a class="footer-phone" href="tel:+74956660166">+74956660166</a>
-    </p>
+  <footer class="main-footer">
+    <div class="footer-address">
+      <p>#Visitsedona</p>
+      <p>Тел:
+        <a class="footer-phone" href="tel:+74956660166">+74956660166</a>
+      </p>
+    </div>
     <ul class="social-list">
       <li class="social-button">
         <a href="#">Twitter</a>
@@ -113,9 +129,11 @@
         <a href="#">YouTube</a>
       </li>
     </ul>
-    <p class="footer-copyright">
-      Website by <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-    </p>
+    <div class="footer-logo">
+      <p class="footer-copyright">
+        Website by <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
