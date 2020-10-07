@@ -230,13 +230,15 @@ img {
   grid-column: 1 / -1;
   list-style: none;
   margin: 0;
-  padding: 160px 0 83px 0;
+  padding: 0;
   background-color: var(--light);
 }
 
 .service-item {
   display: grid;
   position: relative;
+  padding-top: 160px;
+  padding-bottom: 83px;
 }
 
 .service-item h3 {
@@ -252,26 +254,25 @@ img {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-  left: 40%;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .service-item-home::before {
   background-image: url("../img/icon-house.svg");
-  top: -99px;
   width: 75px;
   height: 72px;
 }
 
 .service-item-food::before {
   background-image: url("../img/icon-food.svg");
-  top: -99px;
   width: 75px;
   height: 70px;
 }
 
 .service-item-gifts::before {
   background-image: url("../img/icon-gifts.svg");
-  top: -105px;
   width: 64px;
   height: 77px;
 }
@@ -399,9 +400,8 @@ img {
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px;
-  justify-self: center;
   color: var(--dark);
+  width: 1200px;
   text-align: center;
   background-color: var(--extra-bright);
   padding-top: 23px;
