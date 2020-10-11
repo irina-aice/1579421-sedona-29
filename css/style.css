@@ -688,13 +688,29 @@ img {
   align-items: flex-end;
 }
 
-.hotels-rating-star-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.hotels-stars {
+  background-image: url("../img/star-rating.svg");
+  background-repeat: space;
+  height: 17px;
 }
 
-.hotels-rating-star-list svg + svg {
-  margin-left: 6px;
+.hotels-stars-one {
+  width: 19px;
+}
+
+.hotels-stars-two {
+  width: 43px;
+}
+
+.hotels-stars-three {
+  width: 67px;
+}
+
+.hotels-stars-four {
+  width: 91px;
+}
+
+.hotels-stars-five {
+  width: 115px;
 }
 
