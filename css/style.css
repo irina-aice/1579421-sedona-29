@@ -375,10 +375,8 @@ img {
   position: absolute;
   top: 100%;
   width: 568px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--light);
   box-shadow: 0 7px 15px var(--extra-light-black);
   box-sizing: border-box;
@@ -495,6 +493,10 @@ img {
   border: none;
 }
 
+.search-map iframe {
+  border: 0;
+}
+
 /*search-form-end*/
 
 /*search end*/
@@ -607,18 +609,20 @@ img {
 
 .footer-copyright span {
   display: inline-block;
+  padding-top: 5px;
   margin-right: 6px;
 }
 
 .footer-logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 4px;
 }
 
 .footer-copyright {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 /*footer end*/
