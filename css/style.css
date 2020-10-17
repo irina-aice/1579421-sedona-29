@@ -142,6 +142,7 @@ img {
 
 .main-photo-sedona {
   display: grid;
+  background-color: var(--blue);
   background-image: url("../img/photo-sedona.jpg");
   background-repeat: no-repeat;
   height: 509px;
@@ -177,7 +178,7 @@ img {
   line-height: 26px;
   color: var(--dark);
   margin-top: 42px;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 }
 
 .features p {
@@ -192,7 +193,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 256px auto;
   margin: 0;
-  padding: 55px 0 0 0;
+  padding: 53px 0 0 0;
 }
 
 .feature-item-city {
@@ -490,8 +491,8 @@ img {
   color: var(--light);
   background-color: var(--light-blue);
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   border: none;
 }
 
@@ -674,11 +675,12 @@ img {
 .filter-container label {
   position: relative;
   display: block;
-  cursor: pointer;
   user-select: none;
   padding-left: 40px;
 }
 
+.filter-price-range-max:focus,
+.filter-price-range-min:focus,
 .filter-container:focus label,
 .filter-input-checkbox:focus + label svg {
   outline: 2px solid var(--dark);
@@ -699,7 +701,7 @@ img {
   display: inline-block;
 }
 
-.filter-input-checkbox:disabled + label svg path{
+.filter-input-checkbox:disabled + label svg path {
   fill: var(--extra-gray);
 }
 
@@ -792,7 +794,6 @@ img {
 .filter-price-range-max:hover,
 .filter-price-range-min:hover {
   border: 9px solid var(--light);
-  cursor: pointer;
 }
 
 .filter-price-button {
