@@ -43,17 +43,18 @@ body {
 }
 
 .page-body {
-  position: relative;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  height: 100%;
   background-color: var(--extra-light);
 }
 
 .body-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   box-shadow: 0 5px 15px var(--lighter-black);
   width: 1280px;
+  min-height: 100%;
 }
 
 .main-navigation a,
@@ -328,10 +329,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.search-hotels h2 {
-  display: none;
 }
 
 .search-subtitle {
@@ -637,6 +634,7 @@ img {
   background-image: url("../img/blur-sedona-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--brown);
 }
 
 /*filter-start*/
@@ -719,13 +717,6 @@ img {
   color: var(--light);
 }
 
-.filter-price-input-group {
-  display: flex;
-  align-items: baseline;
-  width: 156px;
-  box-sizing: border-box;
-}
-
 .filter-price-control span {
   width: 50%;
   text-align: right;
@@ -734,7 +725,6 @@ img {
 .filter-price-control input {
   width: 50%;
   height: 22px;
-  padding: 0 0 0 3px;
   border: 0;
   box-sizing: border-box;
   text-align: left;
@@ -753,6 +743,11 @@ img {
 
 .filter-price-control label:not(:first-child) {
   border-left: 2px solid var(--light);
+  padding-right: 9px;
+}
+
+.filter-price-control label:first-child {
+  padding-left: 9px;
 }
 
 .filter-price-range {
@@ -796,20 +791,26 @@ img {
   border: 9px solid var(--light);
 }
 
+.filter-price-button-helper {
+  margin-right: 10px;
+}
+
 .filter-price-button {
+  display: block;
+  min-width: 137px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 33px;
+  padding: 5.6px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--light);
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: var(--light);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 33px;
-  padding: 6px 35px 6px 31px;
   background: transparent;
-  border: 2px solid var(--light);
 }
 
 .filter-price-button:hover {
@@ -891,12 +892,14 @@ img {
 }
 
 .hotels-sorting-list a {
+  display: inline-block;
+  line-height: 0;
+  vertical-align: bottom;
   text-decoration: none;
 }
 
-
 .hotels-sorting-item:not(:last-child) {
-  padding-right: 11px;
+  padding-right: 9px;
 }
 
 .hotels-sorting-item:hover path {
