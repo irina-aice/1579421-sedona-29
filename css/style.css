@@ -791,10 +791,6 @@ img {
   border: 9px solid var(--light);
 }
 
-.filter-price-button-helper {
-  margin-right: 10px;
-}
-
 .filter-price-button {
   display: block;
   min-width: 137px;
@@ -811,6 +807,7 @@ img {
   text-transform: uppercase;
   color: var(--light);
   background: transparent;
+  transform: translateX(-4px);
 }
 
 .filter-price-button:hover {
