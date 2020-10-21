@@ -347,6 +347,8 @@ img {
 /*search-form-start*/
 
 .button-search {
+  position: relative;
+  z-index: 2;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 21px;
@@ -367,20 +369,33 @@ img {
   background-color: var(--dark-brown);
 }
 
+.search-form-map-wrapper {
+  overflow-y: hidden;
+}
+
 .search-form-wrapper {
   position: relative;
 }
 
-.search-form {
+.search-popup {
   position: absolute;
   top: 100%;
-  width: 568px;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--light);
+  width: 568px;
+  padding: 55px;
   box-shadow: 0 7px 15px var(--extra-light-black);
   box-sizing: border-box;
-  padding: 55px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-100%);
+  transition: all 0.35s ease-in-out;
+  background-color: var(--light);
+}
+
+.search-popup-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 .search-form-item {
