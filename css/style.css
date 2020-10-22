@@ -385,16 +385,12 @@ img {
   padding: 55px;
   box-shadow: 0 7px 15px var(--extra-light-black);
   box-sizing: border-box;
-  opacity: 0;
-  visibility: hidden;
   transform: translateX(-50%) translateY(-100%);
   transition: all 0.35s ease-in-out;
   background-color: var(--light);
 }
 
 .search-popup-show {
-  opacity: 1;
-  visibility: visible;
   transform: translateX(-50%) translateY(0);
 }
 
@@ -506,6 +502,11 @@ img {
   padding-top: 15px;
   padding-bottom: 17px;
   border: none;
+}
+
+.search-map {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 .search-map iframe {
