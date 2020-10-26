@@ -37,7 +37,7 @@
 
       <section class="features">
         <h1>Седона &mdash; небольшой городок в Аризоне, <br> заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features-list">
           <li class="main-feature-item feature-item-city">
             <div class="main-feature-item-description">
@@ -100,8 +100,8 @@
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="search-form-item">
                   <label for="arrival-date">Дата заезда:</label>
-                  <input class="search-form-date" id="arrival-date" type="text" name="arrival-date"
-                         value="24 апреля 2017">
+                  <input class="search-form-date search-form-arrival-date" id="arrival-date" type="text" name="arrival-date"
+                         placeholder="24 апреля 2017">
                   <button aria-label="Выбор даты заезда" class="search-form-control-button search-form-button-calendar"
                           type="button">
                     <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,8 +116,8 @@
                 </div>
                 <div class="search-form-item">
                   <label for="departure-date">Дата выезда:</label>
-                  <input class="search-form-date" id="departure-date" type="text" name="departure-date"
-                         value="4 июля 2017">
+                  <input class="search-form-date search-form-departure-date" id="departure-date" type="text" name="departure-date"
+                         placeholder="4 июля 2017">
                   <button aria-label="Выбор даты выезда" class="search-form-control-button search-form-button-calendar"
                           type="button">
                     <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,8 +134,8 @@
                   <div class="search-form-item search-form-item-adult">
                     <label for="adult">Взрослые:</label>
                     <div class="search-form-control-number">
-                      <input class="search-form-control-number-field search-form-adult" id="adult" type="number"
-                             name="adult" value="2">
+                      <input class="search-form-control-number-field search-form-adult" id="adult" type="text"
+                             name="adult" placeholder="2">
                       <button aria-label="Уменьшение количества взрослых"
                               class="search-form-control-button search-form-control-button-minus"
                               type="button">
@@ -156,9 +156,8 @@
                   <div class="search-form-item search-form-item-children">
                     <label for="children">Дети:</label>
                     <div class="search-form-control-number">
-                      <input class="search-form-control-number-field search-form-children" id="children" type="number"
-                             name="children"
-                             value="0">
+                      <input class="search-form-control-number-field search-form-children" id="children" type="text"
+                             name="children" placeholder="0">
                       <button aria-label="Уменьшение количества детей"
                               class="search-form-control-button search-form-control-button-minus"
                               type="button">
