@@ -4,7 +4,7 @@ const searchForm = document.querySelector('.search-form');
 const searchAdult = document.querySelector('.search-form-adult');
 const searchChildren = document.querySelector('.search-form-children');
 const searchArrival = document.querySelector('.search-form-arrival-date');
-const searchDepature =document.querySelector('.search-form-departure-date');
+const searchDepature = document.querySelector('.search-form-departure-date');
 
 if (localStorage.getItem('adult')) {
   searchAdult.value = localStorage.getItem('adult');
@@ -19,7 +19,7 @@ buttonSearch.addEventListener('click', function () {
   searchPopup.classList.toggle('search-popup-show');
 });
 
-searchForm.addEventListener('submit', function(evt){
+searchForm.addEventListener('submit', function (evt) {
   if (!searchArrival.value || !searchDepature.value) {
     evt.preventDefault();
     searchForm.classList.add('search-form-error');
@@ -35,6 +35,6 @@ searchForm.addEventListener('submit', function(evt){
   }
 });
 
-searchForm.addEventListener('animationend', function(evt) {
+searchForm.addEventListener('animationend', function (evt) {
   searchForm.classList.remove('search-form-error');
 });

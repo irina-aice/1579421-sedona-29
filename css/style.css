@@ -446,13 +446,15 @@ p.features-description {
   padding-bottom: 11px;
   border: 0;
   background-color: var(--extra-light);
+  font-weight: 700;
+  color: var(--dark);
+  text-transform: uppercase;
 }
 
 .search-form-item input::placeholder,
 .search-form-control-number input::placeholder {
-  font-weight: 700;
   color: var(--dark);
-  text-transform: uppercase;
+  opacity: 1;
 }
 
 .search-form-date {
